@@ -1,0 +1,2704 @@
+[
+ {
+  "kode": "undangan_rapat",
+  "nama": "Undangan Rapat Pengurus",
+  "kategori": "Undangan",
+  "kode_surat": "UND",
+  "def": {
+   "format": "surat",
+   "perihal": "Undangan Rapat Pengurus",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Puji syukur kita panjatkan ke hadirat Allah SWT atas segala rahmat dan karunia-Nya. Shalawat serta salam semoga senantiasa tercurah kepada junjungan kita Nabi Muhammad SAW.",
+    "Sehubungan dengan akan dilaksanakannya rapat pengurus {{org_jenis}} {{org_nama}}, dengan ini kami mengundang Bapak/Ibu/Saudara untuk hadir pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}} {{zona}} s.d. selesai",
+    "::Tempat|{{tempat}}",
+    "Adapun agenda rapat adalah sebagai berikut:",
+    "[[list:agenda]]",
+    "Mengingat pentingnya acara tersebut, kami sangat mengharapkan kehadiran Bapak/Ibu/Saudara tepat pada waktunya. Atas perhatian dan kehadirannya kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea",
+     "default": "Bapak/Ibu Pengurus {{org_jenis}} {{org_nama}}"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal rapat",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu mulai",
+     "type": "time",
+     "default": "19.30"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "agenda",
+     "label": "Agenda rapat (satu per baris)",
+     "type": "list",
+     "default": "Evaluasi program kerja\nRencana kegiatan bulan depan\nLain-lain"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "undangan_kajian",
+  "nama": "Undangan Pengajian/Kajian",
+  "kategori": "Undangan",
+  "kode_surat": "UND",
+  "def": {
+   "format": "surat",
+   "perihal": "Undangan {{nama_kegiatan}}",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Puji syukur kita panjatkan ke hadirat Allah SWT. Shalawat dan salam semoga tercurah kepada Rasulullah SAW, keluarga, sahabat, dan umatnya hingga akhir zaman.",
+    "Dalam rangka meningkatkan ilmu dan ketakwaan kepada Allah SWT, {{org_jenis}} {{org_nama}} akan menyelenggarakan {{nama_kegiatan}} yang insya Allah akan dilaksanakan pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}} s.d. selesai",
+    "::Tempat|{{tempat}}",
+    "::Tema|{{tema}}",
+    "::Pemateri|{{pemateri}}",
+    "Sehubungan dengan hal tersebut, kami mengundang Bapak/Ibu/Saudara untuk dapat hadir dan mengikuti kegiatan tersebut. Atas perhatian dan kehadirannya kami ucapkan jazakumullahu khairan."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea",
+     "default": "Bapak/Ibu/Saudara Jamaah"
+    },
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text",
+     "default": "Kajian Rutin Bulanan"
+    },
+    {
+     "key": "tema",
+     "label": "Tema kajian",
+     "type": "text"
+    },
+    {
+     "key": "pemateri",
+     "label": "Pemateri/Ustadz",
+     "type": "text"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "time",
+     "default": "Ba'da Maghrib"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "undangan_phbi",
+  "nama": "Undangan PHBI",
+  "kategori": "Undangan",
+  "kode_surat": "UND",
+  "def": {
+   "format": "surat",
+   "perihal": "Undangan {{nama_acara}}",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Puji syukur kita panjatkan ke hadirat Allah SWT atas limpahan rahmat dan nikmat-Nya. Shalawat serta salam semoga tercurah kepada Nabi Muhammad SAW.",
+    "Dalam rangka Peringatan Hari Besar Islam (PHBI), {{org_jenis}} {{org_nama}} akan menyelenggarakan {{nama_acara}} yang insya Allah akan dilaksanakan pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}} {{zona}} s.d. selesai",
+    "::Tempat|{{tempat}}",
+    "::Penceramah|{{penceramah}}",
+    "Besar harapan kami Bapak/Ibu/Saudara berkenan hadir untuk memeriahkan acara tersebut. Atas perhatian dan kehadirannya kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Panitia {{nama_acara}}",
+   "ttd": [
+    {
+     "jabatan": "Ketua Panitia",
+     "nama": "{{ketua_panitia}}"
+    },
+    {
+     "jabatan": "Sekretaris Panitia",
+     "nama": "{{sekretaris_panitia}}"
+    },
+    {
+     "atas": "Mengetahui,",
+     "jabatan": "{{jabatan_ketua}} {{org_jenis}}",
+     "nama": "{{ketua}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea",
+     "default": "Bapak/Ibu/Saudara Jamaah"
+    },
+    {
+     "key": "nama_acara",
+     "label": "Nama acara",
+     "type": "text",
+     "default": "Peringatan Maulid Nabi Muhammad SAW"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "time",
+     "default": "19.30"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "penceramah",
+     "label": "Penceramah",
+     "type": "text"
+    },
+    {
+     "key": "ketua_panitia",
+     "label": "Nama Ketua Panitia",
+     "type": "text"
+    },
+    {
+     "key": "sekretaris_panitia",
+     "label": "Nama Sekretaris Panitia",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "undangan_halal_bihalal",
+  "nama": "Undangan Halal Bihalal",
+  "kategori": "Undangan",
+  "kode_surat": "UND",
+  "def": {
+   "format": "surat",
+   "perihal": "Undangan Halal Bihalal",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Puji syukur kita panjatkan ke hadirat Allah SWT yang telah mempertemukan kita kembali dengan hari raya Idul Fitri. Taqabbalallahu minna wa minkum, mohon maaf lahir dan batin.",
+    "Dalam rangka mempererat tali silaturahmi, {{org_jenis}} {{org_nama}} mengundang Bapak/Ibu/Saudara untuk hadir dalam acara Halal Bihalal yang insya Allah akan dilaksanakan pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}} {{zona}} s.d. selesai",
+    "::Tempat|{{tempat}}",
+    "::Acara|{{acara}}",
+    "Demikian undangan ini kami sampaikan. Atas perhatian dan kehadiran Bapak/Ibu/Saudara kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea",
+     "default": "Bapak/Ibu/Saudara Jamaah"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "time",
+     "default": "09.00"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "acara",
+     "label": "Susunan acara singkat",
+     "type": "text",
+     "default": "Halal bihalal, tausiyah, dan ramah tamah"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "permohonan_dana",
+  "nama": "Permohonan Dana/Sponsor",
+  "kategori": "Permohonan",
+  "kode_surat": "PMH",
+  "def": {
+   "format": "surat",
+   "perihal": "Permohonan Bantuan Dana {{nama_kegiatan}}",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Puji syukur kita panjatkan ke hadirat Allah SWT. Semoga Bapak/Ibu senantiasa dalam lindungan dan limpahan rahmat-Nya dalam menjalankan aktivitas sehari-hari.",
+    "Sehubungan dengan akan diselenggarakannya {{nama_kegiatan}} oleh {{org_jenis}} {{org_nama}} yang insya Allah akan dilaksanakan pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_kegiatan}}",
+    "::Tempat|{{tempat}}",
+    "Kegiatan tersebut membutuhkan biaya sebesar Rp {{rupiah:anggaran}},- ({{terbilang:anggaran}} Rupiah) sebagaimana rincian dalam proposal terlampir. Untuk itu kami mengajukan permohonan bantuan dana/sponsor kepada Bapak/Ibu sesuai dengan kemampuan dan kebijakan yang berlaku.",
+    "Bantuan dapat disalurkan melalui rekening {{rekening}}. Informasi lebih lanjut dapat menghubungi {{kontak}}.",
+    "Demikian permohonan ini kami sampaikan. Atas perhatian dan bantuan Bapak/Ibu kami ucapkan terima kasih, semoga Allah SWT membalas dengan pahala yang berlipat ganda."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea",
+     "default": "Pimpinan ..."
+    },
+    {
+     "key": "lampiran",
+     "label": "Lampiran",
+     "type": "text",
+     "default": "1 (satu) berkas proposal"
+    },
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text"
+    },
+    {
+     "key": "tanggal_kegiatan",
+     "label": "Tanggal kegiatan",
+     "type": "date"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "anggaran",
+     "label": "Total anggaran (Rp)",
+     "type": "number"
+    },
+    {
+     "key": "rekening",
+     "label": "Rekening (bank, nomor, atas nama)",
+     "type": "text"
+    },
+    {
+     "key": "kontak",
+     "label": "Narahubung (nama & telepon)",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "permohonan_bantuan_pemerintah",
+  "nama": "Permohonan Bantuan Pemerintah/CSR",
+  "kategori": "Permohonan",
+  "kode_surat": "PMH",
+  "def": {
+   "format": "surat",
+   "perihal": "Permohonan Bantuan {{jenis_bantuan}}",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Dengan hormat, yang bertanda tangan di bawah ini Pengurus {{org_jenis}} {{org_nama}} yang beralamat di {{org_alamat}}, dengan ini mengajukan permohonan bantuan {{jenis_bantuan}} kepada Bapak/Ibu.",
+    "Bantuan tersebut akan dipergunakan untuk {{tujuan_penggunaan}}, dengan perkiraan kebutuhan biaya sebesar Rp {{rupiah:nilai}},- ({{terbilang:nilai}} Rupiah).",
+    "{{latar_belakang}}",
+    "Sebagai bahan pertimbangan, bersama ini kami lampirkan proposal beserta dokumen pendukung. Besar harapan kami permohonan ini dapat dikabulkan.",
+    "Demikian surat permohonan ini kami sampaikan. Atas perhatian dan kerja samanya kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "tembusan": "{{tembusan}}",
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea",
+     "default": "Bapak Bupati/Walikota ...\nc.q. Kepala Bagian Kesejahteraan Rakyat"
+    },
+    {
+     "key": "lampiran",
+     "label": "Lampiran",
+     "type": "text",
+     "default": "1 (satu) berkas"
+    },
+    {
+     "key": "jenis_bantuan",
+     "label": "Jenis bantuan",
+     "type": "text",
+     "default": "Dana Hibah Pembangunan/Renovasi"
+    },
+    {
+     "key": "tujuan_penggunaan",
+     "label": "Tujuan penggunaan",
+     "type": "textarea"
+    },
+    {
+     "key": "nilai",
+     "label": "Nilai yang diajukan (Rp)",
+     "type": "number"
+    },
+    {
+     "key": "latar_belakang",
+     "label": "Latar belakang singkat (opsional)",
+     "type": "textarea"
+    },
+    {
+     "key": "tembusan",
+     "label": "Tembusan (satu per baris)",
+     "type": "list",
+     "default": "Camat setempat\nKepala Desa/Lurah setempat\nArsip"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "permohonan_penceramah",
+  "nama": "Permohonan Penceramah/Khatib",
+  "kategori": "Permohonan",
+  "kode_surat": "PMH",
+  "def": {
+   "format": "surat",
+   "perihal": "Permohonan Menjadi {{peran}}",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Puji syukur kita panjatkan ke hadirat Allah SWT. Shalawat serta salam semoga tercurah kepada Nabi Muhammad SAW.",
+    "Dengan ini kami Pengurus {{org_jenis}} {{org_nama}} memohon kesediaan Ustadz untuk menjadi {{peran}} pada kegiatan yang insya Allah akan dilaksanakan pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}} {{zona}}",
+    "::Tempat|{{tempat}}",
+    "::Acara|{{acara}}",
+    "::Tema|{{tema}}",
+    "Besar harapan kami Ustadz berkenan memenuhi permohonan ini. Konfirmasi dapat disampaikan kepada {{kontak}}. Atas perhatian dan kesediaannya kami ucapkan jazakumullahu khairan katsiran."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (nama ustadz)",
+     "type": "textarea",
+     "default": "Al-Ustadz ..."
+    },
+    {
+     "key": "peran",
+     "label": "Peran",
+     "type": "select",
+     "options": [
+      "Khatib Jumat",
+      "Penceramah",
+      "Imam & Khatib Idul Fitri",
+      "Imam & Khatib Idul Adha",
+      "Pemateri Kajian"
+     ],
+     "default": "Penceramah"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "time"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "acara",
+     "label": "Nama acara",
+     "type": "text"
+    },
+    {
+     "key": "tema",
+     "label": "Tema (opsional)",
+     "type": "text",
+     "default": "Diserahkan kepada Ustadz"
+    },
+    {
+     "key": "kontak",
+     "label": "Narahubung",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "permohonan_izin_keramaian",
+  "nama": "Permohonan Izin Keramaian",
+  "kategori": "Permohonan",
+  "kode_surat": "PMH",
+  "def": {
+   "format": "surat",
+   "perihal": "Permohonan Izin Keramaian",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Dengan hormat, dalam rangka {{nama_kegiatan}}, Pengurus {{org_jenis}} {{org_nama}} akan menyelenggarakan kegiatan yang insya Allah akan dilaksanakan pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}}",
+    "::Tempat|{{tempat}}",
+    "::Rangkaian acara|{{rangkaian}}",
+    "::Perkiraan peserta|{{peserta}} orang",
+    "::Penanggung jawab|{{penanggung_jawab}} ({{telepon}})",
+    "Sehubungan dengan hal tersebut, kami mohon Bapak berkenan memberikan izin keramaian serta bantuan pengamanan demi kelancaran kegiatan tersebut.",
+    "Demikian permohonan ini kami sampaikan. Atas perhatian dan izin yang diberikan kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "tembusan": "{{tembusan}}",
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea",
+     "default": "Kepala Kepolisian Sektor ..."
+    },
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "text",
+     "default": "08.00 s.d. 12.00 WIB"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text"
+    },
+    {
+     "key": "rangkaian",
+     "label": "Rangkaian acara",
+     "type": "text"
+    },
+    {
+     "key": "peserta",
+     "label": "Perkiraan jumlah peserta",
+     "type": "text"
+    },
+    {
+     "key": "penanggung_jawab",
+     "label": "Penanggung jawab",
+     "type": "text",
+     "default": "{{ketua}}"
+    },
+    {
+     "key": "telepon",
+     "label": "Telepon penanggung jawab",
+     "type": "text"
+    },
+    {
+     "key": "tembusan",
+     "label": "Tembusan (satu per baris)",
+     "type": "list",
+     "default": "Danramil setempat\nCamat setempat\nKepala Desa/Lurah setempat\nKetua RT/RW setempat"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "surat_edaran",
+  "nama": "Surat Edaran/Pemberitahuan Jamaah",
+  "kategori": "Pemberitahuan",
+  "kode_surat": "EDR",
+  "def": {
+   "format": "dokumen",
+   "judul": "{{judul}}\nTENTANG\n{{upper:tentang}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Kepada Yth. {{kepada}}",
+    "{{pembuka}}",
+    "[[list:poin]]",
+    "{{penutup}}"
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_tanggal": true,
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "judul",
+     "label": "Judul",
+     "type": "select",
+     "options": [
+      "SURAT EDARAN",
+      "PEMBERITAHUAN",
+      "PENGUMUMAN"
+     ],
+     "default": "PEMBERITAHUAN"
+    },
+    {
+     "key": "tentang",
+     "label": "Tentang",
+     "type": "text",
+     "default": "Jadwal Kegiatan Bulan Ramadhan"
+    },
+    {
+     "key": "kepada",
+     "label": "Ditujukan kepada",
+     "type": "text",
+     "default": "Seluruh Jamaah {{org_nama}}"
+    },
+    {
+     "key": "pembuka",
+     "label": "Paragraf pembuka",
+     "type": "textarea",
+     "default": "Dengan hormat, bersama ini kami sampaikan beberapa hal sebagai berikut:"
+    },
+    {
+     "key": "poin",
+     "label": "Poin-poin (satu per baris)",
+     "type": "list"
+    },
+    {
+     "key": "penutup",
+     "label": "Paragraf penutup",
+     "type": "textarea",
+     "default": "Demikian pemberitahuan ini kami sampaikan. Atas perhatian dan kerja sama Bapak/Ibu/Saudara kami ucapkan terima kasih."
+    }
+   ]
+  }
+ },
+ {
+  "kode": "sk_pengurus",
+  "nama": "SK Pengurus",
+  "kategori": "Surat Keputusan",
+  "kode_surat": "SK",
+  "def": {
+   "format": "dokumen",
+   "judul": "SURAT KEPUTUSAN\n{{upper:org_jenis}} {{upper:org_nama}}\nTENTANG\nSUSUNAN PENGURUS {{upper:org_jenis}} {{upper:org_nama}} PERIODE {{periode}}",
+   "body": [
+    "^^Bismillahirrahmanirrahim",
+    "**Menimbang:",
+    "[[list:menimbang]]",
+    "**Mengingat:",
+    "[[list:mengingat]]",
+    "**Memperhatikan:",
+    "[[list:memperhatikan]]",
+    "^^MEMUTUSKAN",
+    "::Menetapkan|Susunan Pengurus {{org_jenis}} {{org_nama}} Periode {{periode}}.",
+    "::Pertama|Mengangkat nama-nama sebagaimana tercantum dalam lampiran keputusan ini sebagai Pengurus {{org_jenis}} {{org_nama}} Periode {{periode}}.",
+    "::Kedua|Pengurus sebagaimana dimaksud dalam diktum Pertama bertugas melaksanakan program kerja dan mengelola kegiatan organisasi dengan penuh amanah dan tanggung jawab.",
+    "::Ketiga|Keputusan ini berlaku sejak tanggal ditetapkan, dengan ketentuan apabila di kemudian hari terdapat kekeliruan akan diadakan perbaikan sebagaimana mestinya.",
+    "",
+    "::Ditetapkan di|{{org_kota}}",
+    "::Pada tanggal|{{tanggal_surat}}",
+    "[[ttd]]",
+    "[[pagebreak]]",
+    "^^LAMPIRAN SURAT KEPUTUSAN {{upper:org_jenis}} {{upper:org_nama}}",
+    "^^NOMOR: {{nomor}}",
+    "^^SUSUNAN PENGURUS {{upper:org_jenis}} {{upper:org_nama}} MASA BAKTI {{periode}}",
+    "[[table:susunan|No|Jabatan|Nama]]"
+   ],
+   "ttd": [
+    {
+     "jabatan": "{{penandatangan_jabatan}}",
+     "nama": "{{penandatangan_nama}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "periode",
+     "label": "Periode / masa bakti",
+     "type": "text",
+     "default": "{{periode_aktif}}",
+     "hint": "Otomatis dari periode aktif di menu Struktur Organisasi."
+    },
+    {
+     "key": "menimbang",
+     "label": "Menimbang (satu per baris)",
+     "type": "list",
+     "default": "Bahwa untuk kelancaran kegiatan dan kemakmuran organisasi perlu dibentuk susunan pengurus yang baru;\nBahwa nama-nama yang tercantum dalam lampiran keputusan ini dipandang cakap dan mampu melaksanakan tugas."
+    },
+    {
+     "key": "mengingat",
+     "label": "Mengingat (satu per baris)",
+     "type": "list",
+     "default": "Anggaran Dasar dan Anggaran Rumah Tangga organisasi;\nProgram kerja organisasi."
+    },
+    {
+     "key": "memperhatikan",
+     "label": "Memperhatikan (satu per baris)",
+     "type": "list",
+     "default": "Hasil musyawarah pengurus dan jamaah."
+    },
+    {
+     "key": "susunan",
+     "label": "Susunan pengurus (Jabatan | Nama, satu per baris)",
+     "type": "list",
+     "default": "{{susunan_pengurus}}",
+     "hint": "Terisi otomatis dari pengurus aktif periode aktif (menu Struktur Organisasi). Boleh diubah."
+    },
+    {
+     "key": "penandatangan_jabatan",
+     "label": "Jabatan penandatangan",
+     "type": "text",
+     "default": "{{jabatan_ketua}}"
+    },
+    {
+     "key": "penandatangan_nama",
+     "label": "Nama penandatangan",
+     "type": "text",
+     "default": "{{ketua}}"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "sk_panitia",
+  "nama": "SK Kepanitiaan",
+  "kategori": "Surat Keputusan",
+  "kode_surat": "SK",
+  "def": {
+   "format": "dokumen",
+   "judul": "SURAT KEPUTUSAN\n{{upper:org_jenis}} {{upper:org_nama}}\nTENTANG\nPEMBENTUKAN PANITIA {{upper:nama_kegiatan}}",
+   "body": [
+    "^^Bismillahirrahmanirrahim",
+    "**Menimbang:",
+    "[[list:menimbang]]",
+    "**Mengingat:",
+    "[[list:mengingat]]",
+    "^^MEMUTUSKAN",
+    "::Menetapkan|Pembentukan Panitia {{nama_kegiatan}}.",
+    "::Pertama|Membentuk Panitia {{nama_kegiatan}} dengan susunan sebagaimana tercantum dalam lampiran keputusan ini.",
+    "::Kedua|Panitia bertugas {{tugas}}, serta menyampaikan laporan pertanggungjawaban kepada Pengurus {{org_jenis}} setelah kegiatan selesai.",
+    "::Ketiga|Keputusan ini berlaku sejak tanggal ditetapkan sampai dengan berakhirnya kegiatan.",
+    "",
+    "::Ditetapkan di|{{org_kota}}",
+    "::Pada tanggal|{{tanggal_surat}}",
+    "[[ttd]]",
+    "[[pagebreak]]",
+    "^^LAMPIRAN: SUSUNAN PANITIA {{upper:nama_kegiatan}}",
+    "[[table:susunan|No|Jabatan|Nama]]"
+   ],
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text",
+     "default": "Peringatan Isra Mi'raj"
+    },
+    {
+     "key": "menimbang",
+     "label": "Menimbang (satu per baris)",
+     "type": "list",
+     "default": "Bahwa untuk kelancaran pelaksanaan kegiatan perlu dibentuk panitia;\nBahwa nama-nama yang tercantum dalam lampiran dipandang mampu melaksanakan tugas."
+    },
+    {
+     "key": "mengingat",
+     "label": "Mengingat (satu per baris)",
+     "type": "list",
+     "default": "Program kerja organisasi;\nHasil rapat pengurus."
+    },
+    {
+     "key": "tugas",
+     "label": "Tugas panitia",
+     "type": "textarea",
+     "default": "merencanakan, mempersiapkan, dan melaksanakan kegiatan dengan sebaik-baiknya"
+    },
+    {
+     "key": "susunan",
+     "label": "Susunan panitia (Jabatan | Nama, satu per baris)",
+     "type": "list",
+     "default": "Penanggung Jawab | {{ketua}}\nKetua Panitia | \nSekretaris | \nBendahara | "
+    }
+   ]
+  }
+ },
+ {
+  "kode": "surat_tugas",
+  "nama": "Surat Tugas",
+  "kategori": "Surat Tugas & Kuasa",
+  "kode_surat": "ST",
+  "def": {
+   "format": "dokumen",
+   "judul": "SURAT TUGAS",
+   "body": [
+    "Yang bertanda tangan di bawah ini:",
+    "::Nama|{{ketua}}",
+    "::Jabatan|{{jabatan_ketua}} {{org_jenis}} {{org_nama}}",
+    "Dengan ini memberikan tugas kepada:",
+    "[[table:petugas|No|Nama|Jabatan]]",
+    "::Untuk|{{keperluan}}",
+    "::Hari, tanggal|{{haritgl:tanggal_tugas}}",
+    "::Tempat|{{tempat}}",
+    "Demikian surat tugas ini dibuat untuk dilaksanakan dengan penuh tanggung jawab dan dipergunakan sebagaimana mestinya."
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "petugas",
+     "label": "Yang ditugaskan (Nama | Jabatan, satu per baris)",
+     "type": "list"
+    },
+    {
+     "key": "keperluan",
+     "label": "Untuk keperluan",
+     "type": "textarea"
+    },
+    {
+     "key": "tanggal_tugas",
+     "label": "Tanggal tugas",
+     "type": "date"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "surat_kuasa",
+  "nama": "Surat Mandat/Kuasa",
+  "kategori": "Surat Tugas & Kuasa",
+  "kode_surat": "SKU",
+  "def": {
+   "format": "dokumen",
+   "judul": "{{judul}}",
+   "body": [
+    "Yang bertanda tangan di bawah ini:",
+    "::Nama|{{pemberi_nama}}",
+    "::Jabatan|{{pemberi_jabatan}}",
+    "::Alamat|{{org_alamat}}",
+    "Selanjutnya disebut sebagai Pemberi Kuasa, dengan ini memberikan kuasa/mandat kepada:",
+    "::Nama|{{penerima_nama}}",
+    "::Jabatan|{{penerima_jabatan}}",
+    "::Alamat|{{penerima_alamat}}",
+    "Selanjutnya disebut sebagai Penerima Kuasa.",
+    "^^KHUSUS",
+    "Untuk {{keperluan}}.",
+    "Demikian surat ini dibuat untuk dipergunakan sebagaimana mestinya."
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "Penerima Kuasa",
+     "nama": "{{penerima_nama}}"
+    },
+    {
+     "jabatan": "Pemberi Kuasa",
+     "nama": "{{pemberi_nama}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "judul",
+     "label": "Judul",
+     "type": "select",
+     "options": [
+      "SURAT KUASA",
+      "SURAT MANDAT"
+     ],
+     "default": "SURAT KUASA"
+    },
+    {
+     "key": "pemberi_nama",
+     "label": "Nama pemberi kuasa",
+     "type": "text",
+     "default": "{{ketua}}"
+    },
+    {
+     "key": "pemberi_jabatan",
+     "label": "Jabatan pemberi kuasa",
+     "type": "text",
+     "default": "{{jabatan_ketua}} {{org_jenis}} {{org_nama}}"
+    },
+    {
+     "key": "penerima_nama",
+     "label": "Nama penerima kuasa",
+     "type": "text"
+    },
+    {
+     "key": "penerima_jabatan",
+     "label": "Jabatan penerima kuasa",
+     "type": "text"
+    },
+    {
+     "key": "penerima_alamat",
+     "label": "Alamat penerima kuasa",
+     "type": "text"
+    },
+    {
+     "key": "keperluan",
+     "label": "Untuk keperluan",
+     "type": "textarea"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "sk_aktif_pengurus",
+  "nama": "Surat Keterangan Aktif Pengurus",
+  "kategori": "Surat Keterangan",
+  "kode_surat": "KET",
+  "def": {
+   "format": "dokumen",
+   "judul": "SURAT KETERANGAN",
+   "body": [
+    "Yang bertanda tangan di bawah ini {{jabatan_ketua}} {{org_jenis}} {{org_nama}}, dengan ini menerangkan bahwa:",
+    "::Nama|{{nama}}",
+    "::NIK|{{nik}}",
+    "::Tempat, tanggal lahir|{{ttl}}",
+    "::Alamat|{{alamat}}",
+    "Adalah benar yang bersangkutan merupakan pengurus aktif {{org_jenis}} {{org_nama}} dengan jabatan {{jabatan}} untuk periode {{periode}}.",
+    "Surat keterangan ini diberikan untuk keperluan {{keperluan}}. Demikian surat keterangan ini dibuat dengan sebenarnya untuk dipergunakan sebagaimana mestinya."
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "nama",
+     "label": "Nama",
+     "type": "text"
+    },
+    {
+     "key": "nik",
+     "label": "NIK",
+     "type": "text"
+    },
+    {
+     "key": "ttl",
+     "label": "Tempat, tanggal lahir",
+     "type": "text"
+    },
+    {
+     "key": "alamat",
+     "label": "Alamat",
+     "type": "textarea"
+    },
+    {
+     "key": "jabatan",
+     "label": "Jabatan dalam kepengurusan",
+     "type": "text"
+    },
+    {
+     "key": "periode",
+     "label": "Periode",
+     "type": "text"
+    },
+    {
+     "key": "keperluan",
+     "label": "Keperluan",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "sk_domisili",
+  "nama": "Surat Keterangan Domisili",
+  "kategori": "Surat Keterangan",
+  "kode_surat": "KET",
+  "def": {
+   "format": "dokumen",
+   "judul": "SURAT KETERANGAN DOMISILI",
+   "body": [
+    "Yang bertanda tangan di bawah ini Pengurus {{org_jenis}} {{org_nama}}, dengan ini menerangkan bahwa:",
+    "::Nama lembaga|{{nama_lembaga}}",
+    "::Alamat/sekretariat|{{alamat_lembaga}}",
+    "::Berdiri sejak|{{berdiri}}",
+    "::Bidang kegiatan|{{bidang}}",
+    "Adalah benar berdomisili dan berkegiatan di alamat tersebut di atas sampai dengan surat keterangan ini dibuat.",
+    "Surat keterangan ini dibuat untuk keperluan {{keperluan}}. Demikian surat keterangan ini dibuat dengan sebenarnya untuk dipergunakan sebagaimana mestinya."
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    },
+    {
+     "atas": "Mengetahui,",
+     "jabatan": "{{mengetahui_jabatan}}",
+     "nama": "{{mengetahui_nama}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "nama_lembaga",
+     "label": "Nama lembaga",
+     "type": "text",
+     "default": "{{org_jenis}} {{org_nama}}"
+    },
+    {
+     "key": "alamat_lembaga",
+     "label": "Alamat",
+     "type": "textarea",
+     "default": "{{org_alamat}}"
+    },
+    {
+     "key": "berdiri",
+     "label": "Berdiri sejak",
+     "type": "text"
+    },
+    {
+     "key": "bidang",
+     "label": "Bidang kegiatan",
+     "type": "text",
+     "default": "Keagamaan dan sosial kemasyarakatan"
+    },
+    {
+     "key": "keperluan",
+     "label": "Keperluan",
+     "type": "text",
+     "default": "pembukaan rekening bank"
+    },
+    {
+     "key": "mengetahui_jabatan",
+     "label": "Mengetahui - jabatan (kosongkan bila tidak perlu)",
+     "type": "text",
+     "default": "Ketua RW ..."
+    },
+    {
+     "key": "mengetahui_nama",
+     "label": "Mengetahui - nama",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "surat_rekomendasi",
+  "nama": "Surat Rekomendasi",
+  "kategori": "Surat Keterangan",
+  "kode_surat": "REK",
+  "def": {
+   "format": "dokumen",
+   "judul": "SURAT REKOMENDASI",
+   "body": [
+    "Yang bertanda tangan di bawah ini {{jabatan_ketua}} {{org_jenis}} {{org_nama}}, dengan ini memberikan rekomendasi kepada:",
+    "::Nama|{{nama}}",
+    "::Tempat, tanggal lahir|{{ttl}}",
+    "::Alamat|{{alamat}}",
+    "::Keterangan|{{keterangan}}",
+    "{{alasan}}",
+    "Berdasarkan hal tersebut, kami merekomendasikan yang bersangkutan untuk {{keperluan}}.",
+    "Demikian surat rekomendasi ini kami buat dengan sebenarnya untuk dapat dipergunakan sebagaimana mestinya."
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "nama",
+     "label": "Nama",
+     "type": "text"
+    },
+    {
+     "key": "ttl",
+     "label": "Tempat, tanggal lahir",
+     "type": "text"
+    },
+    {
+     "key": "alamat",
+     "label": "Alamat",
+     "type": "textarea"
+    },
+    {
+     "key": "keterangan",
+     "label": "Keterangan (mis. jamaah aktif / remaja masjid)",
+     "type": "text"
+    },
+    {
+     "key": "alasan",
+     "label": "Alasan/penilaian",
+     "type": "textarea",
+     "default": "Sepengetahuan kami yang bersangkutan berkelakuan baik, aktif dalam kegiatan keagamaan, dan tidak pernah terlibat dalam kegiatan yang bertentangan dengan norma agama maupun hukum."
+    },
+    {
+     "key": "keperluan",
+     "label": "Direkomendasikan untuk",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "surat_pengantar",
+  "nama": "Surat Pengantar",
+  "kategori": "Umum",
+  "kode_surat": "PGT",
+  "def": {
+   "format": "surat",
+   "perihal": "Surat Pengantar",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Bersama ini kami kirimkan kepada Bapak/Ibu berkas/dokumen sebagai berikut:",
+    "[[table:berkas|No|Uraian|Jumlah|Keterangan]]",
+    "{{catatan}}",
+    "Demikian surat pengantar ini kami sampaikan. Atas perhatiannya kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea"
+    },
+    {
+     "key": "berkas",
+     "label": "Berkas (Uraian | Jumlah | Keterangan, satu per baris)",
+     "type": "list",
+     "default": "Proposal kegiatan | 1 berkas | Untuk diketahui"
+    },
+    {
+     "key": "catatan",
+     "label": "Catatan (opsional)",
+     "type": "textarea"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "peminjaman_tempat",
+  "nama": "Peminjaman Tempat",
+  "kategori": "Permohonan",
+  "kode_surat": "PMH",
+  "def": {
+   "format": "surat",
+   "perihal": "Permohonan Peminjaman Tempat",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Sehubungan dengan akan dilaksanakannya {{nama_kegiatan}} oleh {{org_jenis}} {{org_nama}}, dengan ini kami bermaksud meminjam tempat {{tempat}} yang akan digunakan pada:",
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}}",
+    "::Keperluan|{{nama_kegiatan}}",
+    "::Perkiraan peserta|{{peserta}}",
+    "Kami akan menjaga kebersihan, ketertiban, dan keamanan tempat selama digunakan serta bertanggung jawab atas segala kerusakan yang mungkin timbul.",
+    "Demikian permohonan ini kami sampaikan. Atas perhatian dan izinnya kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (pengelola tempat)",
+     "type": "textarea"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat yang dipinjam",
+     "type": "text"
+    },
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "text",
+     "default": "08.00 s.d. 12.00 WIB"
+    },
+    {
+     "key": "peserta",
+     "label": "Perkiraan peserta",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "peminjaman_barang",
+  "nama": "Peminjaman Barang",
+  "kategori": "Permohonan",
+  "kode_surat": "PMH",
+  "def": {
+   "format": "surat",
+   "perihal": "Permohonan Peminjaman Barang",
+   "tujuan": "{{tujuan}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Sehubungan dengan akan dilaksanakannya {{nama_kegiatan}}, dengan ini kami bermaksud meminjam barang-barang sebagai berikut:",
+    "[[table:barang|No|Nama Barang|Jumlah|Keterangan]]",
+    "::Tanggal pinjam|{{tgl:tanggal_pinjam}}",
+    "::Tanggal kembali|{{tgl:tanggal_kembali}}",
+    "::Penanggung jawab|{{penanggung_jawab}}",
+    "Kami akan menjaga barang tersebut dengan baik dan mengembalikannya tepat waktu dalam keadaan seperti semula.",
+    "Demikian permohonan ini kami sampaikan. Atas perhatian dan bantuannya kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada (tujuan)",
+     "type": "textarea"
+    },
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text"
+    },
+    {
+     "key": "barang",
+     "label": "Barang (Nama | Jumlah | Keterangan, satu per baris)",
+     "type": "list"
+    },
+    {
+     "key": "tanggal_pinjam",
+     "label": "Tanggal pinjam",
+     "type": "date"
+    },
+    {
+     "key": "tanggal_kembali",
+     "label": "Tanggal kembali",
+     "type": "date"
+    },
+    {
+     "key": "penanggung_jawab",
+     "label": "Penanggung jawab (nama & telepon)",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "berita_acara_rapat",
+  "nama": "Berita Acara Rapat",
+  "kategori": "Berita Acara & Notulen",
+  "kode_surat": "BA",
+  "def": {
+   "format": "dokumen",
+   "judul": "BERITA ACARA RAPAT",
+   "body": [
+    "Pada hari ini {{haritgl:tanggal_rapat}}, telah dilaksanakan rapat {{jenis_rapat}} {{org_jenis}} {{org_nama}} dengan keterangan sebagai berikut:",
+    "::Waktu|{{waktu}} {{zona}} s.d. selesai",
+    "::Tempat|{{tempat}}",
+    "::Pimpinan rapat|{{pimpinan}}",
+    "::Notulis|{{notulis}}",
+    "::Jumlah peserta|{{peserta}} orang (daftar hadir terlampir)",
+    "**Agenda rapat:",
+    "[[list:agenda]]",
+    "**Hasil keputusan rapat:",
+    "[[list:keputusan]]",
+    "Demikian berita acara ini dibuat dengan sebenarnya untuk dipergunakan sebagaimana mestinya."
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "Notulis",
+     "nama": "{{notulis}}"
+    },
+    {
+     "jabatan": "Pimpinan Rapat",
+     "nama": "{{pimpinan}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "jenis_rapat",
+     "label": "Jenis rapat",
+     "type": "text",
+     "default": "pengurus"
+    },
+    {
+     "key": "tanggal_rapat",
+     "label": "Tanggal rapat",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "time",
+     "default": "19.30"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "pimpinan",
+     "label": "Pimpinan rapat",
+     "type": "text",
+     "default": "{{ketua}}"
+    },
+    {
+     "key": "notulis",
+     "label": "Notulis",
+     "type": "text",
+     "default": "{{sekretaris}}"
+    },
+    {
+     "key": "peserta",
+     "label": "Jumlah peserta",
+     "type": "text"
+    },
+    {
+     "key": "agenda",
+     "label": "Agenda (satu per baris)",
+     "type": "list"
+    },
+    {
+     "key": "keputusan",
+     "label": "Keputusan (satu per baris)",
+     "type": "list"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "berita_acara_serah_terima",
+  "nama": "Berita Acara Serah Terima",
+  "kategori": "Berita Acara & Notulen",
+  "kode_surat": "BA",
+  "def": {
+   "format": "dokumen",
+   "judul": "BERITA ACARA SERAH TERIMA",
+   "body": [
+    "Pada hari ini {{haritgl:tanggal_serah}}, kami yang bertanda tangan di bawah ini:",
+    "::Nama|{{pihak1_nama}}",
+    "::Jabatan|{{pihak1_jabatan}}",
+    "Selanjutnya disebut PIHAK PERTAMA.",
+    "::Nama|{{pihak2_nama}}",
+    "::Jabatan|{{pihak2_jabatan}}",
+    "Selanjutnya disebut PIHAK KEDUA.",
+    "PIHAK PERTAMA menyerahkan kepada PIHAK KEDUA, dan PIHAK KEDUA menyatakan telah menerima dari PIHAK PERTAMA {{objek}} dengan rincian sebagai berikut:",
+    "[[table:barang|No|Uraian|Jumlah|Kondisi]]",
+    "Demikian berita acara serah terima ini dibuat dengan sebenarnya dalam rangkap secukupnya untuk dipergunakan sebagaimana mestinya."
+   ],
+   "ttd": [
+    {
+     "jabatan": "PIHAK KEDUA",
+     "nama": "{{pihak2_nama}}"
+    },
+    {
+     "jabatan": "PIHAK PERTAMA",
+     "nama": "{{pihak1_nama}}"
+    },
+    {
+     "atas": "Mengetahui,",
+     "jabatan": "{{jabatan_ketua}} {{org_jenis}}",
+     "nama": "{{ketua}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tanggal_serah",
+     "label": "Tanggal serah terima",
+     "type": "date"
+    },
+    {
+     "key": "pihak1_nama",
+     "label": "Pihak pertama - nama",
+     "type": "text"
+    },
+    {
+     "key": "pihak1_jabatan",
+     "label": "Pihak pertama - jabatan",
+     "type": "text"
+    },
+    {
+     "key": "pihak2_nama",
+     "label": "Pihak kedua - nama",
+     "type": "text"
+    },
+    {
+     "key": "pihak2_jabatan",
+     "label": "Pihak kedua - jabatan",
+     "type": "text"
+    },
+    {
+     "key": "objek",
+     "label": "Objek serah terima",
+     "type": "text",
+     "default": "barang/dokumen inventaris"
+    },
+    {
+     "key": "barang",
+     "label": "Rincian (Uraian | Jumlah | Kondisi, satu per baris)",
+     "type": "list"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "notulen_rapat",
+  "nama": "Notulen Rapat",
+  "kategori": "Berita Acara & Notulen",
+  "kode_surat": "NOT",
+  "def": {
+   "format": "dokumen",
+   "judul": "NOTULEN RAPAT",
+   "tanpa_nomor": true,
+   "body": [
+    "::Hari, tanggal|{{haritgl:tanggal_rapat}}",
+    "::Waktu|{{waktu}} {{zona}} s.d. selesai",
+    "::Tempat|{{tempat}}",
+    "::Pimpinan rapat|{{pimpinan}}",
+    "::Notulis|{{notulis}}",
+    "::Peserta|{{peserta}}",
+    "**Agenda:",
+    "[[list:agenda]]",
+    "**Pembahasan:",
+    "{{pembahasan}}",
+    "**Keputusan/Kesimpulan:",
+    "[[list:keputusan]]",
+    "**Tindak lanjut:",
+    "[[list:tindak_lanjut]]"
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "Notulis",
+     "nama": "{{notulis}}"
+    },
+    {
+     "atas": "Mengetahui,",
+     "jabatan": "Pimpinan Rapat",
+     "nama": "{{pimpinan}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "tanggal_rapat",
+     "label": "Tanggal rapat",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "time",
+     "default": "19.30"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "pimpinan",
+     "label": "Pimpinan rapat",
+     "type": "text",
+     "default": "{{ketua}}"
+    },
+    {
+     "key": "notulis",
+     "label": "Notulis",
+     "type": "text",
+     "default": "{{sekretaris}}"
+    },
+    {
+     "key": "peserta",
+     "label": "Peserta",
+     "type": "text",
+     "default": "Pengurus (daftar hadir terlampir)"
+    },
+    {
+     "key": "agenda",
+     "label": "Agenda (satu per baris)",
+     "type": "list"
+    },
+    {
+     "key": "pembahasan",
+     "label": "Pembahasan",
+     "type": "textarea"
+    },
+    {
+     "key": "keputusan",
+     "label": "Keputusan (satu per baris)",
+     "type": "list"
+    },
+    {
+     "key": "tindak_lanjut",
+     "label": "Tindak lanjut (satu per baris)",
+     "type": "list"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "daftar_hadir",
+  "nama": "Daftar Hadir",
+  "kategori": "Berita Acara & Notulen",
+  "kode_surat": "DH",
+  "def": {
+   "format": "dokumen",
+   "judul": "DAFTAR HADIR\n{{upper:nama_acara}}",
+   "tanpa_nomor": true,
+   "body": [
+    "::Hari, tanggal|{{haritgl:tanggal_acara}}",
+    "::Waktu|{{waktu}}",
+    "::Tempat|{{tempat}}",
+    "[[table:peserta;min=25|No|Nama|Jabatan/Alamat|Tanda Tangan]]"
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_sekretaris}}",
+     "nama": "{{sekretaris}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "nama_acara",
+     "label": "Nama acara",
+     "type": "text",
+     "default": "Rapat Pengurus"
+    },
+    {
+     "key": "tanggal_acara",
+     "label": "Tanggal",
+     "type": "date"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "text"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_nama}}"
+    },
+    {
+     "key": "peserta",
+     "label": "Nama peserta (opsional, Nama | Jabatan, satu per baris; sisa baris kosong otomatis)",
+     "type": "list"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "kwitansi",
+  "nama": "Kwitansi",
+  "kategori": "Keuangan",
+  "kode_surat": "KWT",
+  "def": {
+   "format": "dokumen",
+   "judul": "KWITANSI",
+   "body": [
+    "::Telah terima dari|{{dari}}",
+    "::Uang sejumlah|{{terbilang:jumlah}} Rupiah",
+    "::Untuk pembayaran|{{keperluan}}",
+    "",
+    "^^Rp {{rupiah:jumlah}},-"
+   ],
+   "ttd_tanggal": true,
+   "ttd": [
+    {
+     "jabatan": "Yang Menyerahkan",
+     "nama": "{{dari}}"
+    },
+    {
+     "jabatan": "{{jabatan_penerima}}",
+     "nama": "{{penerima}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "dari",
+     "label": "Telah terima dari",
+     "type": "text"
+    },
+    {
+     "key": "jumlah",
+     "label": "Jumlah (Rp)",
+     "type": "number"
+    },
+    {
+     "key": "keperluan",
+     "label": "Untuk pembayaran",
+     "type": "textarea"
+    },
+    {
+     "key": "penerima",
+     "label": "Nama penerima",
+     "type": "text",
+     "default": "{{bendahara}}"
+    },
+    {
+     "key": "jabatan_penerima",
+     "label": "Jabatan penerima",
+     "type": "text",
+     "default": "{{jabatan_bendahara}} {{org_jenis}}"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "terima_kasih_donatur",
+  "nama": "Ucapan Terima Kasih Donatur",
+  "kategori": "Umum",
+  "kode_surat": "TK",
+  "def": {
+   "format": "surat",
+   "perihal": "Ucapan Terima Kasih",
+   "tujuan": "{{nama_donatur}}",
+   "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+   "body": [
+    "Puji syukur kita panjatkan ke hadirat Allah SWT atas segala nikmat dan karunia-Nya.",
+    "Atas nama Pengurus {{org_jenis}} {{org_nama}}, kami menyampaikan terima kasih yang sebesar-besarnya atas {{bentuk}} yang telah Bapak/Ibu berikan sebesar {{nilai}} untuk {{program}}.",
+    "Semoga Allah SWT menerima amal ibadah Bapak/Ibu, melipatgandakan pahalanya, serta melimpahkan keberkahan pada harta, keluarga, dan usaha Bapak/Ibu. Jazakumullahu khairan katsiran.",
+    "Demikian surat ini kami sampaikan. Atas perhatian dan kepeduliannya kami ucapkan terima kasih."
+   ],
+   "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+   "ttd_judul": "Pengurus {{org_jenis}} {{org_nama}}",
+   "ttd": [
+    {
+     "jabatan": "{{jabatan_ketua}}",
+     "nama": "{{ketua}}"
+    },
+    {
+     "jabatan": "{{jabatan_bendahara}}",
+     "nama": "{{bendahara}}"
+    }
+   ],
+   "fields": [
+    {
+     "key": "nama_donatur",
+     "label": "Nama donatur",
+     "type": "textarea"
+    },
+    {
+     "key": "bentuk",
+     "label": "Bentuk donasi",
+     "type": "text",
+     "default": "infaq/sedekah"
+    },
+    {
+     "key": "nilai",
+     "label": "Nilai/jumlah (mis. Rp 1.000.000,- atau 10 sak semen)",
+     "type": "text"
+    },
+    {
+     "key": "program",
+     "label": "Untuk program",
+     "type": "text",
+     "default": "kegiatan operasional dan kemakmuran masjid"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "cover_lpj",
+  "nama": "Cover LPJ",
+  "kategori": "Laporan",
+  "kode_surat": "LPJ",
+  "def": {
+   "format": "cover",
+   "judul": "LAPORAN PERTANGGUNGJAWABAN",
+   "tanpa_nomor": true,
+   "body": [
+    "{{upper:nama_kegiatan}}",
+    "{{periode}}"
+   ],
+   "ttd": [],
+   "fields": [
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan/program",
+     "type": "text",
+     "default": "Kepanitiaan Ramadhan"
+    },
+    {
+     "key": "periode",
+     "label": "Periode/tahun",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ {
+  "kode": "lpj_kegiatan",
+  "nama": "LPJ Kegiatan (lengkap)",
+  "kategori": "Laporan",
+  "kode_surat": "LPJ",
+  "def": {
+   "format": "laporan",
+   "tanpa_nomor": true,
+   "nomor_halaman": true,
+   "judul": "LAPORAN PERTANGGUNGJAWABAN {{upper:nama_kegiatan}}",
+   "body": [],
+   "ttd": [],
+   "computed": [
+    {
+     "key": "saldo",
+     "expr": "pemasukan_total - pengeluaran_total"
+    }
+   ],
+   "sections": [
+    {
+     "type": "cover",
+     "judul": "LAPORAN PERTANGGUNGJAWABAN",
+     "body": [
+      "{{upper:nama_kegiatan}}",
+      "[[if:tema]]",
+      "“{{tema}}”",
+      "[[endif]]"
+     ],
+     "footer": "PANITIA {{upper:nama_kegiatan}}\n{{upper:org_jenis}} {{upper:org_nama}}\n{{tahun_kegiatan}}"
+    },
+    {
+     "type": "halaman",
+     "kop": true,
+     "judul": "LEMBAR PENGESAHAN",
+     "body": [
+      "Laporan Pertanggungjawaban (LPJ) {{nama_kegiatan}} yang diselenggarakan oleh Panitia {{nama_kegiatan}} {{org_jenis}} {{org_nama}} pada tanggal {{tgl:tanggal_mulai}} bertempat di {{tempat}} telah diperiksa dan disahkan pada:",
+      "::Hari, tanggal|{{hari_surat}}, {{tanggal_surat}}",
+      "::Tempat|{{org_kota}}",
+      "",
+      "[[ttd]]"
+     ],
+     "ttd_judul": "Panitia {{nama_kegiatan}}",
+     "ttd": [
+      {
+       "jabatan": "Ketua Panitia",
+       "nama": "{{ketua_panitia}}"
+      },
+      {
+       "jabatan": "Sekretaris Panitia",
+       "nama": "{{sekretaris_panitia}}"
+      },
+      {
+       "atas": "Mengetahui,",
+       "jabatan": "{{jabatan_ketua_org}}",
+       "nama": "{{ketua}}"
+      }
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "KATA PENGANTAR",
+     "body": [
+      "{{kata_pengantar}}"
+     ],
+     "ttd_tanggal": true,
+     "ttd": [
+      {
+       "jabatan": "Ketua Panitia",
+       "nama": "{{ketua_panitia}}"
+      }
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "BAB I\nPENDAHULUAN",
+     "body": [
+      "##A. Latar Belakang",
+      "{{latar_belakang}}",
+      "##B. Dasar Kegiatan",
+      "[[list:dasar_kegiatan]]",
+      "##C. Tujuan Kegiatan",
+      "[[list:tujuan_kegiatan]]"
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "BAB II\nPELAKSANAAN KEGIATAN",
+     "body": [
+      "##A. Nama dan Tema Kegiatan",
+      "::Nama kegiatan|{{nama_kegiatan}}",
+      "[[if:tema]]",
+      "::Tema|{{tema}}",
+      "[[endif]]",
+      "##B. Waktu dan Tempat",
+      "[[if:!tanggal_selesai]]",
+      "::Hari, tanggal|{{haritgl:tanggal_mulai}}",
+      "[[endif]]",
+      "[[if:tanggal_selesai]]",
+      "::Tanggal|{{haritgl:tanggal_mulai}} s.d. {{haritgl:tanggal_selesai}}",
+      "[[endif]]",
+      "::Waktu|{{waktu}}",
+      "::Tempat|{{tempat}}",
+      "##C. Susunan Panitia",
+      "[[table:susunan_panitia]]",
+      "##D. Peserta / Sasaran",
+      "{{peserta}}",
+      "[[if:jumlah_peserta]]",
+      "Jumlah peserta yang hadir: {{jumlah_peserta}}.",
+      "[[endif]]",
+      "##E. Rangkaian Acara",
+      "[[table:rangkaian_acara]]",
+      "##F. Hasil Kegiatan",
+      "[[list:hasil_kegiatan]]"
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "BAB III\nLAPORAN KEUANGAN",
+     "body": [
+      "##A. Pemasukan",
+      "[[table:pemasukan]]",
+      "##B. Pengeluaran",
+      "[[table:pengeluaran]]",
+      "##C. Rekapitulasi",
+      "::Total pemasukan|Rp {{pemasukan_total}}",
+      "::Total pengeluaran|Rp {{pengeluaran_total}}",
+      "::Saldo akhir|Rp {{saldo}}",
+      "__Terbilang saldo akhir: {{terbilang:saldo}} Rupiah.",
+      "[[if:catatan_keuangan]]",
+      "{{catatan_keuangan}}",
+      "[[endif]]"
+     ],
+     "ttd_tanggal": true,
+     "ttd": [
+      {
+       "jabatan": "Bendahara Panitia",
+       "nama": "{{bendahara_panitia}}"
+      },
+      {
+       "jabatan": "Ketua Panitia",
+       "nama": "{{ketua_panitia}}"
+      }
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "BAB IV\nEVALUASI",
+     "body": [
+      "##A. Hambatan / Kendala",
+      "[[list:hambatan]]",
+      "##B. Saran",
+      "[[list:saran]]"
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "BAB V\nPENUTUP",
+     "body": [
+      "{{penutup}}"
+     ],
+     "ttd_tanggal": true,
+     "ttd_judul": "Panitia {{nama_kegiatan}}",
+     "ttd": [
+      {
+       "jabatan": "Ketua Panitia",
+       "nama": "{{ketua_panitia}}"
+      },
+      {
+       "jabatan": "Sekretaris Panitia",
+       "nama": "{{sekretaris_panitia}}"
+      }
+     ]
+    },
+    {
+     "type": "halaman",
+     "if": "dokumentasi",
+     "judul": "LAMPIRAN\nDOKUMENTASI KEGIATAN",
+     "body": [
+      "[[images:dokumentasi]]"
+     ]
+    },
+    {
+     "type": "halaman",
+     "if": "lampirkan_daftar_hadir",
+     "judul": "LAMPIRAN\nDAFTAR HADIR",
+     "body": [
+      "::Kegiatan|{{nama_kegiatan}}",
+      "::Hari, tanggal|{{haritgl:tanggal_mulai}}",
+      "::Tempat|{{tempat}}",
+      "[[table:daftar_hadir]]"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text",
+     "default": "Peringatan Maulid Nabi Muhammad SAW",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tema",
+     "label": "Tema (opsional)",
+     "type": "text",
+     "default": "",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tahun_kegiatan",
+     "label": "Tahun (di sampul)",
+     "type": "text",
+     "default": "{{tahun}}",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tanggal_mulai",
+     "label": "Tanggal pelaksanaan",
+     "type": "date",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tanggal_selesai",
+     "label": "Tanggal selesai (kosongkan bila satu hari)",
+     "type": "date",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "text",
+     "default": "08.00 {{zona}} - selesai",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_jenis}} {{org_nama}}",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "ketua_panitia",
+     "label": "Nama Ketua Panitia",
+     "type": "text",
+     "group": "Panitia & pengesahan"
+    },
+    {
+     "key": "sekretaris_panitia",
+     "label": "Nama Sekretaris Panitia",
+     "type": "text",
+     "group": "Panitia & pengesahan"
+    },
+    {
+     "key": "bendahara_panitia",
+     "label": "Nama Bendahara Panitia",
+     "type": "text",
+     "group": "Panitia & pengesahan"
+    },
+    {
+     "key": "susunan_panitia",
+     "label": "Susunan panitia",
+     "type": "table",
+     "default": "[{\"jabatan\": \"Pelindung\", \"nama\": \"{{ketua}}\"}, {\"jabatan\": \"Ketua Panitia\", \"nama\": \"\"}, {\"jabatan\": \"Sekretaris\", \"nama\": \"\"}, {\"jabatan\": \"Bendahara\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Acara\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Konsumsi\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Perlengkapan\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Dokumentasi\", \"nama\": \"\"}]",
+     "group": "Panitia & pengesahan",
+     "columns": [
+      {
+       "key": "jabatan",
+       "label": "Jabatan",
+       "width": 1.2
+      },
+      {
+       "key": "nama",
+       "label": "Nama",
+       "width": 1.6
+      }
+     ],
+     "numbered": true,
+     "source": "struktur"
+    },
+    {
+     "key": "kata_pengantar",
+     "label": "Kata pengantar",
+     "type": "textarea",
+     "default": "Assalamu'alaikum Warahmatullahi Wabarakatuh\nPuji syukur kami panjatkan ke hadirat Allah SWT atas limpahan rahmat dan karunia-Nya sehingga {{nama_kegiatan}} dapat terlaksana dengan baik dan lancar. Shalawat serta salam semoga senantiasa tercurah kepada Nabi Muhammad SAW.\nLaporan pertanggungjawaban ini kami susun sebagai bentuk pertanggungjawaban panitia atas pelaksanaan kegiatan kepada Pengurus {{org_jenis}} {{org_nama}}, para donatur, serta seluruh jamaah.\nKami mengucapkan terima kasih kepada semua pihak yang telah membantu terselenggaranya kegiatan ini. Kami menyadari laporan ini masih jauh dari sempurna, oleh karena itu saran dan masukan sangat kami harapkan.\nWassalamu'alaikum Warahmatullahi Wabarakatuh",
+     "group": "Pendahuluan"
+    },
+    {
+     "key": "latar_belakang",
+     "label": "Latar belakang",
+     "type": "textarea",
+     "default": "",
+     "group": "Pendahuluan"
+    },
+    {
+     "key": "dasar_kegiatan",
+     "label": "Dasar kegiatan (satu per baris)",
+     "type": "list",
+     "default": "Program kerja {{org_jenis}} {{org_nama}} tahun {{tahun}};\nHasil rapat pengurus {{org_jenis}} {{org_nama}};\nSurat Keputusan pembentukan panitia.",
+     "group": "Pendahuluan"
+    },
+    {
+     "key": "tujuan_kegiatan",
+     "label": "Tujuan kegiatan (satu per baris)",
+     "type": "list",
+     "default": "",
+     "group": "Pendahuluan"
+    },
+    {
+     "key": "peserta",
+     "label": "Peserta / sasaran",
+     "type": "textarea",
+     "default": "Jamaah {{org_jenis}} {{org_nama}} dan masyarakat sekitar.",
+     "group": "Pelaksanaan"
+    },
+    {
+     "key": "jumlah_peserta",
+     "label": "Jumlah peserta hadir (opsional)",
+     "type": "text",
+     "default": "",
+     "group": "Pelaksanaan"
+    },
+    {
+     "key": "rangkaian_acara",
+     "label": "Rangkaian acara",
+     "type": "table",
+     "default": "[{\"waktu\": \"08.00 - 08.30\", \"acara\": \"Pembukaan\", \"pengisi\": \"MC\"}, {\"waktu\": \"08.30 - 08.45\", \"acara\": \"Tilawah Al-Qur'an\", \"pengisi\": \"\"}, {\"waktu\": \"08.45 - 09.00\", \"acara\": \"Sambutan Ketua Panitia\", \"pengisi\": \"Ketua Panitia\"}, {\"waktu\": \"09.00 - 09.15\", \"acara\": \"Sambutan {{jabatan_ketua_org}}\", \"pengisi\": \"{{ketua}}\"}, {\"waktu\": \"09.15 - 11.00\", \"acara\": \"Acara inti\", \"pengisi\": \"\"}, {\"waktu\": \"11.00 - 11.15\", \"acara\": \"Doa dan penutup\", \"pengisi\": \"\"}]",
+     "group": "Pelaksanaan",
+     "columns": [
+      {
+       "key": "waktu",
+       "label": "Waktu",
+       "width": 0.8
+      },
+      {
+       "key": "acara",
+       "label": "Acara",
+       "width": 1.7
+      },
+      {
+       "key": "pengisi",
+       "label": "Pengisi / Penanggung Jawab",
+       "width": 1.3
+      }
+     ],
+     "numbered": true
+    },
+    {
+     "key": "hasil_kegiatan",
+     "label": "Hasil kegiatan (satu per baris)",
+     "type": "list",
+     "default": "",
+     "group": "Pelaksanaan"
+    },
+    {
+     "key": "pemasukan",
+     "label": "Pemasukan",
+     "type": "table",
+     "default": "[]",
+     "group": "Laporan keuangan",
+     "columns": [
+      {
+       "key": "tanggal",
+       "label": "Tanggal",
+       "type": "date",
+       "width": 1.05
+      },
+      {
+       "key": "uraian",
+       "label": "Uraian",
+       "width": 2
+      },
+      {
+       "key": "jumlah",
+       "label": "Jumlah (Rp)",
+       "type": "number",
+       "width": 1,
+       "sum": true
+      }
+     ],
+     "numbered": true,
+     "source": "kas_masuk",
+     "total_label": "Total Pemasukan"
+    },
+    {
+     "key": "pengeluaran",
+     "label": "Pengeluaran",
+     "type": "table",
+     "default": "[]",
+     "group": "Laporan keuangan",
+     "columns": [
+      {
+       "key": "tanggal",
+       "label": "Tanggal",
+       "type": "date",
+       "width": 1.05
+      },
+      {
+       "key": "uraian",
+       "label": "Uraian",
+       "width": 2
+      },
+      {
+       "key": "jumlah",
+       "label": "Jumlah (Rp)",
+       "type": "number",
+       "width": 1,
+       "sum": true
+      }
+     ],
+     "numbered": true,
+     "source": "kas_keluar",
+     "total_label": "Total Pengeluaran"
+    },
+    {
+     "key": "catatan_keuangan",
+     "label": "Catatan keuangan (opsional)",
+     "type": "textarea",
+     "default": "",
+     "hint": "Mis. sisa dana diserahkan ke kas organisasi.",
+     "group": "Laporan keuangan"
+    },
+    {
+     "key": "hambatan",
+     "label": "Hambatan / kendala (satu per baris)",
+     "type": "list",
+     "default": "",
+     "group": "Evaluasi & penutup"
+    },
+    {
+     "key": "saran",
+     "label": "Saran (satu per baris)",
+     "type": "list",
+     "default": "",
+     "group": "Evaluasi & penutup"
+    },
+    {
+     "key": "penutup",
+     "label": "Penutup",
+     "type": "textarea",
+     "default": "Demikian laporan pertanggungjawaban {{nama_kegiatan}} ini kami sampaikan. Semoga kegiatan ini membawa manfaat dan keberkahan bagi kita semua, serta menjadi bahan evaluasi untuk kegiatan selanjutnya. Atas perhatian dan dukungan semua pihak, kami ucapkan terima kasih.",
+     "group": "Evaluasi & penutup"
+    },
+    {
+     "key": "dokumentasi",
+     "label": "Foto dokumentasi",
+     "type": "image_list",
+     "default": "[]",
+     "hint": "Foto disalin ke folder data aplikasi.",
+     "group": "Lampiran"
+    },
+    {
+     "key": "lampirkan_daftar_hadir",
+     "label": "Lampirkan daftar hadir",
+     "type": "check",
+     "default": "",
+     "group": "Lampiran"
+    },
+    {
+     "key": "daftar_hadir",
+     "label": "Daftar hadir (kosongkan untuk mencetak lembar kosong)",
+     "type": "table",
+     "default": "[]",
+     "group": "Lampiran",
+     "columns": [
+      {
+       "key": "nama",
+       "label": "Nama",
+       "width": 1.5
+      },
+      {
+       "key": "alamat",
+       "label": "Alamat / Instansi",
+       "width": 1.5
+      },
+      {
+       "key": "ttd",
+       "label": "Tanda Tangan",
+       "width": 1
+      }
+     ],
+     "numbered": true,
+     "min_rows": 20
+    }
+   ]
+  }
+ },
+ {
+  "kode": "proposal_kegiatan",
+  "nama": "Proposal Kegiatan (lengkap)",
+  "kategori": "Proposal",
+  "kode_surat": "PRP",
+  "def": {
+   "format": "laporan",
+   "nomor_halaman": true,
+   "judul": "PROPOSAL {{upper:nama_kegiatan}}",
+   "body": [],
+   "ttd": [],
+   "computed": [
+    {
+     "key": "kekurangan_dana",
+     "expr": "rab_total - sumber_dana_total"
+    }
+   ],
+   "sections": [
+    {
+     "type": "surat",
+     "kop": true,
+     "perihal": "Permohonan Dukungan {{nama_kegiatan}}",
+     "tujuan": "{{tujuan}}",
+     "lampiran": "1 (satu) berkas proposal",
+     "salam_pembuka": "Assalamu'alaikum Warahmatullahi Wabarakatuh",
+     "body": [
+      "Puji syukur kita panjatkan ke hadirat Allah SWT. Semoga Bapak/Ibu senantiasa dalam lindungan dan limpahan rahmat-Nya.",
+      "Sehubungan dengan akan diselenggarakannya {{nama_kegiatan}} oleh {{org_jenis}} {{org_nama}} yang insya Allah akan dilaksanakan pada:",
+      "[[if:!tanggal_selesai]]",
+      "::Hari, tanggal|{{haritgl:tanggal_mulai}}",
+      "[[endif]]",
+      "[[if:tanggal_selesai]]",
+      "::Tanggal|{{haritgl:tanggal_mulai}} s.d. {{haritgl:tanggal_selesai}}",
+      "[[endif]]",
+      "::Waktu|{{waktu}}",
+      "::Tempat|{{tempat}}",
+      "maka bersama ini kami sampaikan proposal kegiatan tersebut. Rencana anggaran yang dibutuhkan sebesar Rp {{rab_total}},- ({{terbilang:rab_total}} Rupiah) dengan rincian sebagaimana terlampir. Besar harapan kami Bapak/Ibu berkenan memberikan dukungan, baik moril maupun materiil, demi kelancaran kegiatan ini.",
+      "Demikian permohonan ini kami sampaikan. Atas perhatian dan bantuan Bapak/Ibu kami ucapkan terima kasih, semoga Allah SWT membalas dengan pahala yang berlipat ganda."
+     ],
+     "salam_penutup": "Wassalamu'alaikum Warahmatullahi Wabarakatuh",
+     "ttd_judul": "Panitia {{nama_kegiatan}}",
+     "ttd": [
+      {
+       "jabatan": "Ketua Panitia",
+       "nama": "{{ketua_panitia}}"
+      },
+      {
+       "jabatan": "Sekretaris Panitia",
+       "nama": "{{sekretaris_panitia}}"
+      }
+     ]
+    },
+    {
+     "type": "cover",
+     "judul": "PROPOSAL",
+     "body": [
+      "{{upper:nama_kegiatan}}",
+      "[[if:tema]]",
+      "“{{tema}}”",
+      "[[endif]]"
+     ],
+     "footer": "{{upper:org_jenis}} {{upper:org_nama}}\n{{org_alamat}}\n{{tahun_kegiatan}}"
+    },
+    {
+     "type": "halaman",
+     "judul": "PROPOSAL KEGIATAN\n{{upper:nama_kegiatan}}",
+     "body": [
+      "##A. Latar Belakang",
+      "{{latar_belakang}}",
+      "##B. Nama dan Tema Kegiatan",
+      "::Nama kegiatan|{{nama_kegiatan}}",
+      "[[if:tema]]",
+      "::Tema|{{tema}}",
+      "[[endif]]",
+      "##C. Tujuan Kegiatan",
+      "[[list:tujuan_kegiatan]]",
+      "##D. Sasaran dan Peserta",
+      "{{sasaran}}",
+      "[[if:jumlah_peserta]]",
+      "Perkiraan jumlah peserta: {{jumlah_peserta}}.",
+      "[[endif]]",
+      "##E. Waktu dan Tempat",
+      "[[if:!tanggal_selesai]]",
+      "::Hari, tanggal|{{haritgl:tanggal_mulai}}",
+      "[[endif]]",
+      "[[if:tanggal_selesai]]",
+      "::Tanggal|{{haritgl:tanggal_mulai}} s.d. {{haritgl:tanggal_selesai}}",
+      "[[endif]]",
+      "::Waktu|{{waktu}}",
+      "::Tempat|{{tempat}}",
+      "##F. Susunan Panitia",
+      "[[table:susunan_panitia]]",
+      "##G. Rangkaian Acara",
+      "[[table:rangkaian_acara]]"
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "RENCANA ANGGARAN BIAYA",
+     "body": [
+      "##A. Rincian Kebutuhan",
+      "[[table:rab]]",
+      "__Terbilang: {{terbilang:rab_total}} Rupiah.",
+      "[[if:sumber_dana]]",
+      "##B. Sumber Dana",
+      "[[table:sumber_dana]]",
+      "::Total kebutuhan|Rp {{rab_total}}",
+      "::Dana tersedia|Rp {{sumber_dana_total}}",
+      "::Kekurangan dana|Rp {{kekurangan_dana}}",
+      "[[endif]]",
+      "[[if:rekening]]",
+      "Bantuan dapat disalurkan melalui rekening {{rekening}}.",
+      "[[endif]]"
+     ]
+    },
+    {
+     "type": "halaman",
+     "judul": "PENUTUP",
+     "body": [
+      "{{penutup}}",
+      "[[if:kontak]]",
+      "Informasi lebih lanjut dapat menghubungi {{kontak}}.",
+      "[[endif]]"
+     ]
+    },
+    {
+     "type": "halaman",
+     "kop": true,
+     "judul": "LEMBAR PENGESAHAN",
+     "body": [
+      "Proposal {{nama_kegiatan}} yang akan diselenggarakan oleh Panitia {{nama_kegiatan}} {{org_jenis}} {{org_nama}} telah diperiksa dan disetujui untuk diajukan.",
+      "",
+      "[[ttd]]"
+     ],
+     "ttd_tanggal": true,
+     "ttd_judul": "Panitia {{nama_kegiatan}}",
+     "ttd": [
+      {
+       "jabatan": "Ketua Panitia",
+       "nama": "{{ketua_panitia}}"
+      },
+      {
+       "jabatan": "Sekretaris Panitia",
+       "nama": "{{sekretaris_panitia}}"
+      },
+      {
+       "atas": "Mengetahui,",
+       "jabatan": "{{jabatan_ketua_org}}",
+       "nama": "{{ketua}}"
+      }
+     ]
+    },
+    {
+     "type": "halaman",
+     "if": "lampiran_dokumen|lampiran_gambar",
+     "judul": "LAMPIRAN",
+     "body": [
+      "[[if:lampiran_dokumen]]",
+      "**Daftar lampiran:",
+      "[[list:lampiran_dokumen]]",
+      "[[endif]]",
+      "[[images:lampiran_gambar]]"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "key": "tujuan",
+     "label": "Kepada Yth. (tujuan surat)",
+     "type": "textarea",
+     "default": "Bapak/Ibu Pimpinan ...",
+     "group": "Surat pengantar"
+    },
+    {
+     "key": "lampiran",
+     "label": "Lampiran",
+     "type": "text",
+     "default": "1 (satu) berkas proposal",
+     "group": "Surat pengantar"
+    },
+    {
+     "key": "nama_kegiatan",
+     "label": "Nama kegiatan",
+     "type": "text",
+     "default": "Peringatan Isra Mi'raj Nabi Muhammad SAW",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tema",
+     "label": "Tema (opsional)",
+     "type": "text",
+     "default": "",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tahun_kegiatan",
+     "label": "Tahun (di sampul)",
+     "type": "text",
+     "default": "{{tahun}}",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tanggal_mulai",
+     "label": "Tanggal pelaksanaan",
+     "type": "date",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tanggal_selesai",
+     "label": "Tanggal selesai (kosongkan bila satu hari)",
+     "type": "date",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "waktu",
+     "label": "Waktu",
+     "type": "text",
+     "default": "08.00 {{zona}} - selesai",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "tempat",
+     "label": "Tempat",
+     "type": "text",
+     "default": "{{org_jenis}} {{org_nama}}",
+     "group": "Identitas kegiatan"
+    },
+    {
+     "key": "latar_belakang",
+     "label": "Latar belakang",
+     "type": "textarea",
+     "default": "",
+     "group": "Isi proposal"
+    },
+    {
+     "key": "tujuan_kegiatan",
+     "label": "Tujuan kegiatan (satu per baris)",
+     "type": "list",
+     "default": "",
+     "group": "Isi proposal"
+    },
+    {
+     "key": "sasaran",
+     "label": "Sasaran / peserta",
+     "type": "textarea",
+     "default": "Jamaah {{org_jenis}} {{org_nama}} dan masyarakat sekitar.",
+     "group": "Isi proposal"
+    },
+    {
+     "key": "jumlah_peserta",
+     "label": "Perkiraan jumlah peserta (opsional)",
+     "type": "text",
+     "default": "",
+     "group": "Isi proposal"
+    },
+    {
+     "key": "ketua_panitia",
+     "label": "Nama Ketua Panitia",
+     "type": "text",
+     "group": "Panitia & acara"
+    },
+    {
+     "key": "sekretaris_panitia",
+     "label": "Nama Sekretaris Panitia",
+     "type": "text",
+     "group": "Panitia & acara"
+    },
+    {
+     "key": "susunan_panitia",
+     "label": "Susunan panitia",
+     "type": "table",
+     "default": "[{\"jabatan\": \"Pelindung\", \"nama\": \"{{ketua}}\"}, {\"jabatan\": \"Ketua Panitia\", \"nama\": \"\"}, {\"jabatan\": \"Sekretaris\", \"nama\": \"\"}, {\"jabatan\": \"Bendahara\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Acara\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Konsumsi\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Perlengkapan\", \"nama\": \"\"}, {\"jabatan\": \"Seksi Dokumentasi\", \"nama\": \"\"}]",
+     "group": "Panitia & acara",
+     "columns": [
+      {
+       "key": "jabatan",
+       "label": "Jabatan",
+       "width": 1.2
+      },
+      {
+       "key": "nama",
+       "label": "Nama",
+       "width": 1.6
+      }
+     ],
+     "numbered": true,
+     "source": "struktur"
+    },
+    {
+     "key": "rangkaian_acara",
+     "label": "Rangkaian acara",
+     "type": "table",
+     "default": "[{\"waktu\": \"08.00 - 08.30\", \"acara\": \"Pembukaan\", \"pengisi\": \"MC\"}, {\"waktu\": \"08.30 - 08.45\", \"acara\": \"Tilawah Al-Qur'an\", \"pengisi\": \"\"}, {\"waktu\": \"08.45 - 09.00\", \"acara\": \"Sambutan Ketua Panitia\", \"pengisi\": \"Ketua Panitia\"}, {\"waktu\": \"09.00 - 09.15\", \"acara\": \"Sambutan {{jabatan_ketua_org}}\", \"pengisi\": \"{{ketua}}\"}, {\"waktu\": \"09.15 - 11.00\", \"acara\": \"Acara inti\", \"pengisi\": \"\"}, {\"waktu\": \"11.00 - 11.15\", \"acara\": \"Doa dan penutup\", \"pengisi\": \"\"}]",
+     "group": "Panitia & acara",
+     "columns": [
+      {
+       "key": "waktu",
+       "label": "Waktu",
+       "width": 0.8
+      },
+      {
+       "key": "acara",
+       "label": "Acara",
+       "width": 1.7
+      },
+      {
+       "key": "pengisi",
+       "label": "Pengisi / Penanggung Jawab",
+       "width": 1.3
+      }
+     ],
+     "numbered": true
+    },
+    {
+     "key": "rab",
+     "label": "Rencana anggaran biaya (RAB)",
+     "type": "table",
+     "default": "[{\"uraian\": \"Konsumsi peserta\", \"volume\": \"100\", \"satuan\": \"porsi\", \"harga_satuan\": \"20000\"}, {\"uraian\": \"Sewa sound system\", \"volume\": \"1\", \"satuan\": \"paket\", \"harga_satuan\": \"750000\"}, {\"uraian\": \"Honor penceramah\", \"volume\": \"1\", \"satuan\": \"orang\", \"harga_satuan\": \"1500000\"}, {\"uraian\": \"Spanduk & publikasi\", \"volume\": \"2\", \"satuan\": \"lembar\", \"harga_satuan\": \"150000\"}]",
+     "hint": "Kolom Jumlah dihitung otomatis = Volume x Harga Satuan.",
+     "group": "Rencana anggaran",
+     "columns": [
+      {
+       "key": "uraian",
+       "label": "Uraian",
+       "width": 2
+      },
+      {
+       "key": "volume",
+       "label": "Volume",
+       "type": "number",
+       "width": 0.6
+      },
+      {
+       "key": "satuan",
+       "label": "Satuan",
+       "width": 0.6
+      },
+      {
+       "key": "harga_satuan",
+       "label": "Harga Satuan (Rp)",
+       "type": "number",
+       "width": 1
+      },
+      {
+       "key": "jumlah",
+       "label": "Jumlah (Rp)",
+       "type": "number",
+       "width": 1.1,
+       "sum": true,
+       "calc": "volume*harga_satuan"
+      }
+     ],
+     "numbered": true,
+     "total_label": "Total Anggaran"
+    },
+    {
+     "key": "sumber_dana",
+     "label": "Sumber dana (opsional)",
+     "type": "table",
+     "default": "[{\"sumber\": \"Kas {{org_jenis}} {{org_nama}}\", \"jumlah\": \"\"}, {\"sumber\": \"Infaq jamaah\", \"jumlah\": \"\"}, {\"sumber\": \"Donatur / sponsor\", \"jumlah\": \"\"}]",
+     "group": "Rencana anggaran",
+     "columns": [
+      {
+       "key": "sumber",
+       "label": "Sumber Dana",
+       "width": 2
+      },
+      {
+       "key": "jumlah",
+       "label": "Jumlah (Rp)",
+       "type": "number",
+       "width": 1,
+       "sum": true
+      }
+     ],
+     "numbered": true,
+     "total_label": "Total"
+    },
+    {
+     "key": "rekening",
+     "label": "Rekening bantuan (bank, nomor, atas nama)",
+     "type": "text",
+     "default": "",
+     "group": "Rencana anggaran"
+    },
+    {
+     "key": "kontak",
+     "label": "Narahubung (nama & telepon)",
+     "type": "text",
+     "default": "",
+     "group": "Rencana anggaran"
+    },
+    {
+     "key": "penutup",
+     "label": "Penutup",
+     "type": "textarea",
+     "default": "Demikian proposal ini kami susun sebagai gambaran rencana pelaksanaan {{nama_kegiatan}}. Kami berharap kegiatan ini mendapat dukungan dari semua pihak sehingga dapat terlaksana dengan baik dan membawa manfaat bagi jamaah dan masyarakat. Atas perhatian dan partisipasinya kami ucapkan terima kasih.",
+     "group": "Penutup & lampiran"
+    },
+    {
+     "key": "lampiran_dokumen",
+     "label": "Daftar lampiran (opsional, satu per baris)",
+     "type": "list",
+     "default": "",
+     "group": "Penutup & lampiran"
+    },
+    {
+     "key": "lampiran_gambar",
+     "label": "Gambar lampiran (opsional: denah, foto, dsb.)",
+     "type": "image_list",
+     "default": "[]",
+     "group": "Penutup & lampiran"
+    }
+   ]
+  }
+ }
+]

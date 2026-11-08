@@ -1,0 +1,84 @@
+INSERT INTO kas_akun(nama, urutan) VALUES(?, (SELECT COALESCE(MAX(urutan),0)+10 FROM kas_akun))INSERT INTO settings(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.valueGo struct field %s has unnecessarily quoted appearance of `%s` tag option;
+
+INSERT INTO kas_kategori(nama, jenis, akun_id) VALUES(?,?,?)called CompareAndDelete when value is not of comparable typeClient ID dan Client Secret Google belum diisi di Pengaturaninvalid context to convert cursor rows, missing parent *Rows(?i)(\d{1,2})\s*[- ]?\s*([a-z]{3,9})\.?\s*[- ,]?\s*(\d{2,4})bytes.Reader.UnreadRune: previous operation was not ReadRune (Client.Timeout or context cancellation while reading body)net/http: server response headers exceeded %d bytes;
+
+INSERT INTO kas_kategori(nama,jenis) VALUES(?, 'masuk')tipe bagian ke-%d (%q) harus cover, surat, atau halamansql: Scan called without calling Next (closemuScanHold)progressive AC coefficients for more than one componentnet/http: request canceled while waiting for connectionnet/http: invalid byte %q in %s;
+
+INSERT INTO qurban_kelompok(tahun,jenis,nama) VALUES(?,?,?)file ini bukan backup Aplikasi DKM (dkm.db tidak ditemukan)unsupported Scan, storing driver.Value type %T into type %Tsantunan|kematian|kedukaan|yatim|dhuafa|duafa|sakit|musibahRoundTripper returned a response & error;
+
+INSERT INTO surat_counter(tahun,terakhir) VALUES(?,0) ON CONFLICT(tahun) DO NOTHINGname = '%s' and mimeType = 'application/vnd.google-apps.folder' and trashed = falseformat .xls (Excel 97-2003) belum didukung;
+
+INSERT INTO surat_template(kode,nama,kategori,kode_surat,definisi,builtin) VALUES(?,?,?,?,?,0)deprecated: golang.org/x/oauth2: Transport.CancelRequest no longer does anything;
+
+INSERT INTO users(username,nama,password_hash,role,aktif) VALUES(?,?,?,?,?)template bawaan tidak dapat dihapus (bisa diubah atau dikembalikan ke asli)Unsolicited response received on idle HTTP channel starting with %q;
+
+SELECT * FROM petugas_jadwal WHERE tanggal BETWEEN ? AND ? ORDER BY tanggal, kegiatan, peranSELECT id, nama, atas_nama, lunas, biaya FROM qurban_peserta WHERE kelompok_id=? ORDER BY idtls: server sent encrypted client hello retry configs after accepting encrypted client hellocredentials: could not extract target service account email for Regional Access Boundary: %wbig5 - ANSI/OEM Traditional Chinese (Taiwan;
+
+SELECT * FROM v_qurban_kelompok WHERE tahun=? ORDER BY jenis, idkunci isian ke-%d (%q) hanya boleh huruf, angka, dan garis bawahdriver ColumnConverter error converted %T to unsupported type %T Content-Type: text/plain;
+
+SELECT COALESCE(SUM(biaya),0), COALESCE(SUM(CASE WHEN lunas=1 THEN biaya END),0) FROM qurban_peserta WHERE tahun=?The WebView2 runtime is manually specified, but It is not valid. Check minimum required version and webview2 path.http2: Transport: cannot retry err [%v] after Request.Body was written;
+
+SELECT COALESCE(SUM(jumlah),0) FROM peminjaman WHERE status='dipinjam'operasional|konsumsi|warung|rapat|bensin|transport|pulsa|internet|wifibytes.Buffer: UnreadByte: previous operation was not a successful readsync/atomic: compare and swap of inconsistently typed value into ValueToNearestEvenToNearestAwayToZeroAwayFromZeroToNegativeInfToPositiveInfमध्यानपूर्व/मध्यानपच्यातhttp://purl.oclc.org/ooxml/officeDocument/relationships/officeDocumentGo struct field %s has `format` tag option that was not specified lastgot %s for stream %d;
+
+SELECT COALESCE(SUM(saldo_awal),0) FROM kas_akunbidang tidak boleh menjadi induk dirinya sendiriformat harus surat, dokumen, cover, atau laporanSELECT terakhir FROM surat_counter WHERE tahun=?converting driver.Value type %T (%q) to a %s: %vnet/http: Hijack called after ServeHTTP finishedsyscall: string with NUL passed to StringToUTF16reflect.StructOf: fields with different PkgPath reflect: CallSlice with too many input argumentsslice bounds out of range [:%x] with capacity %y is reachable from cleanup or cleanup argument runtime: waitforsingleobject unexpected;
+
+SELECT COUNT(*) FROM kas_transaksi WHERE akun_id=?kas ini masih punya %d transaksi;
+
+SELECT COUNT(*) FROM kas_transaksi WHERE bukti=? AND id<>?called CompareAndSwap when value is not of comparable typeSELECT kategori_nama, jenis, SUM(jumlah) FROM v_kas WHERE UPDATE surat_counter SET terakhir=terakhir+1 WHERE tahun=?sql: transaction has already been committed or rolled backnet/http: bodyAllowed called before the header was writtenThe runtime failed to install correctly. Please try again.GODEBUG=execwait=2 detected a leaked exec.Cmd created by: sync/atomic: swap of inconsistently typed value into Valuexml: unsupported version %q;
+
+SELECT COUNT(*) FROM kas_transaksi WHERE kategori_id=?fmt: scanning called UnreadRune with no rune availableconverting driver.Value type string (%q) to a UUID: %vconverting driver.Value type []byte (%q) to a UUID: %vsql: expected %d destination arguments in Scan, not %dfile JSON tidak berisi daftar transaksi (transactions)bytes.Buffer: reader returned negative count from Readhttp: Request.Write on Request with no Host or URL setread loop ending;
+
+SELECT COUNT(*) FROM org_bidangPRAGMA wal_checkpoint(TRUNCATE)SELECT key, value FROM settingsentitas tidak bisa disimpan: %ssql: duplicate driverConn closeencoding/hex: invalid byte: %#Umultipart/byteranges;
+
+SELECT COUNT(*) FROM org_pengurus WHERE foto=? AND periode_id<>?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_0000000000000000000000000000000000000000000000000000000000000000 <div style="text-align:center;
+
+SELECT COUNT(*) FROM qurban_kelompok WHERE tahun=? AND jenis<>'sapi'http: message cannot contain multiple Content-Length headers;
+
+SELECT COUNT(DISTINCT mustahik_id) FROM penyaluran WHERE substr(tanggal,1,4)=?pattern %q (registered at %s) conflicts with pattern %q (registered at %s): %sreflect: embedded type with methods not implemented if type is not first fieldrange function continued iteration after function for loop body returned falsecrypto/rsa: use of PKCS#1 v1.5 encryption is not allowed in FIPS 140-only modex509: signature check attempts limit reached while verifying certificate chainoauth2/google: can't get a token from the metadata service;
+
+SELECT b.*, COALESCE(p.nama,'') AS parent_nama, (SELECT COUNT(*) FROM org_pengurus g JOIN org_periode o ON o.id=g.periode_id WHERE g.bidang_id=b.id AND o.aktif=1) AS jumlah_pengurus FROM org_bidang b LEFT JOIN org_bidang p ON p.id=b.parent_id;
+
+SELECT g.*, COALESCE(b.nama,'') AS bidang_nama, COALESCE(b.urutan,9999) AS bidang_urutan, COALESCE(a.nama,'') AS parent_nama, COALESCE(j.nama,'') AS jamaah_nama, COALESCE(o.nama,'') AS periode_nama FROM org_pengurus g LEFT JOIN org_bidang b ON b.id=g.bidang_id LEFT JOIN org_pengurus a ON a.id=g.parent_id LEFT JOIN jamaah j ON j.id=g.jamaah_id LEFT JOIN org_periode o ON o.id=g.periode_id;
+
+SELECT i.*, COALESCE((SELECT SUM(p.jumlah) FROM peminjaman p WHERE p.inventaris_id=i.id AND p.status='dipinjam'),0) AS dipinjam FROM inventaris i;
+
+SELECT id FROM kas_transaksi WHERE sumber_impor=? AND bukti='' ORDER BY id LIMIT 1s[oh]+daq[oa]h|sumbangan|sedekah|sodakoh|infa[qk]|donasi|hamba\s+allah|zakat|wakafthe column number must be greater than or equal to %d and less than or equal to %dhttp://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocumentGo struct field %s has invalid appearance of `%s` tag option;
+
+SELECT id FROM qurban_peserta WHERE tahun=? AND jenis=? AND kelompok_id IS NULL ORDER BY idSELECT id,nama,COALESCE(parent_id,0),urutan,peran,aktif FROM org_bidang ORDER BY urutan, idxml: EncodeToken of ProcInst xml target only valid for xml declaration, first token encodedtls: unexpected encrypted client hello extension in server hello despite ECH being acceptedUnsupported codec %q. Defaulting to %q for now. This will start to fail in future releases.attempt to add child of type %T with id %d to a parent (id=%d) that doesn't currently existunicodeFFFE - Unicode UTF-16, big endian byte order;
+
+SELECT id, nama, saldo, jumlah_transaksi FROM v_kas_akun WHERE aktif=1 ORDER BY urutan, idhttp2: server sent GOAWAY and closed the connection;
+
+SELECT id, username, nama, role, aktif FROM users ORDER BY idUPDATE org_periode SET aktif=CASE WHEN id=? THEN 1 ELSE 0 ENDnet/http: invalid Cookie.Domain %q;
+
+SELECT id, username, nama, role, aktif, password_hash FROM users WHERE username=?SELECT tanggal, keterangan, pihak, kategori_nama, jumlah FROM v_kas WHERE jenis=? (bad use of unsafe.Pointer or having race conditions? try -d=checkptr or -race) પૂર્વ મધ્યાહ્ન/ઉત્તર મધ્યાહ્નhttp://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStringscrypto/rsa: use of public exponent <= 2¹⁶ is not allowed in FIPS 140-only modecrypto/rsa: use of primes of different sizes is not allowed in FIPS 140-only modeContext cancellation detected;
+
+SELECT jenis, COUNT(*) AS peserta, COUNT(DISTINCT kelompok_id) AS kelompok FROM qurban_peserta WHERE tahun=? GROUP BY jenis ORDER BY jenis<w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="57" w:type="dxa"/><w:right w:w="57" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>CREATE VIEW v_kas_kategori AS SELECT k.*, COALESCE(a.nama,'Semua kas') AS akun_nama FROM kas_kategori k LEFT JOIN kas_akun a ON a.id=k.akun_idHTTP/1.1 431 Request Header Fields Too Large Content-Type: text/plain;
+
+SELECT jenis, bentuk, SUM(jumlah) AS total, SUM(jiwa) AS jiwa, COUNT(*) AS transaksi FROM zakat_masuk WHERE substr(tanggal,1,4)=? GROUP BY jenis, bentuk ORDER BY jenis, bentuk%[1]s and %[2]s both match some paths, like %[3]q. But neither is more specific than the other. %[1]s matches %[4]q, but %[2]s doesn't. %[2]s matches %[5]q, but %[1]s doesn't.<html><body style="font-family:sans-serif;
+
+SELECT k.*, (SELECT COUNT(*) FROM qurban_peserta q WHERE q.kelompok_id=k.id) AS jumlah_peserta FROM qurban_kelompok k;
+
+SELECT k.id, (SELECT COUNT(*) FROM qurban_peserta q WHERE q.kelompok_id=k.id) FROM qurban_kelompok k WHERE k.tahun=? AND k.jenis='sapi' ORDER BY k.id<div style="border-top:2px dashed #adb5bd;
+
+SELECT p.*, COALESCE(i.nama,'-') AS barang_nama, COALESCE(i.kode,'') AS barang_kode FROM peminjaman p LEFT JOIN inventaris i ON i.id=p.inventaris_id;
+
+SELECT p.*, COALESCE(m.nama,'-') AS mustahik_nama, COALESCE(m.asnaf,'') AS asnaf FROM penyaluran p LEFT JOIN mustahik m ON m.id=p.mustahik_id;
+
+SELECT password_hash FROM users WHERE id=?sql: unknown driver %q (forgotten import?) Rectangle has huge or negative dimensionslooking for beginning of object key stringbad wildcard segment (must start with '{')http: multipart handled by MultipartReaderhttp: ContentLength=%d with Body length %dsync/atomic: store of nil value into ValueMapIter.Value called on exhausted iteratorreflect: negative length passed to ArrayOfreflect: Call with too few input argumentsmismatch between ABI description and typesreflect: cannot convert slice with length bytes;
+
+SELECT q.*, COALESCE(k.nama,'') AS kelompok_nama FROM qurban_peserta q LEFT JOIN qurban_kelompok k ON k.id=q.kelompok_id;
+
+SELECT t.*, COALESCE(k.nama,'(tanpa kategori)') AS kategori_nama FROM kas_transaksi t LEFT JOIN kas_kategori k ON k.id=t.kategori_id;
+
+SELECT t.*, COALESCE(k.nama,'(tanpa kategori)') AS kategori_nama, COALESCE(a.nama,'(kas terhapus)') AS akun_nama FROM kas_transaksi t LEFT JOIN kas_kategori k ON k.id=t.kategori_id LEFT JOIN kas_akun a ON a.id=t.akun_id google/protobuf/duration.protogoogle.protobuf": Duration seconds (Rseconds nanos (RnanosB com.google.protobufB DurationProtoPZ1google.golang.org/protobuf/types/known/durationpbGPB Google.Protobuf.WellKnownTypesbproto3 google/protobuf/timestamp.protogoogle.protobuf";
+
+SELECT value FROM settings WHERE key=?non-subset type %T returned from Valuesql: Register called twice for driver (?i)^\s*(laporan|rekap|rekapitulasi)\bhttp: concurrent read on response bodyfailed to parse Location header %q: %vhttp: ClientConn does not support PINGhttp: HTTP/2 Server already registeredhttp: Accept error: %v;
+
+UPDATE kas_kategori SET akun_id=NULL WHERE akun_id=?kategori dipakai oleh %d transaksi;
+
+UPDATE surat_keluar SET nomor=?, tanggal=?, perihal=?, tujuan=?, data=?, file_pdf=?, file_docx=? WHERE id=?failed to parse private key. Tried PKCS8, PKCS1, and EC formats. Errors: [PKCS8: %v], [PKCS1: %v], [EC: %v]embedded map field %s of type %s must have a string key that does not implement marshal or unmarshal methodsReceived a HEADERS frame with a :connection header which makes the request malformed, as per the HTTP/2 specutf-16 - Unicode UTF-16, little endian byte order (BMP of ISO 10646);
+
+UPDATE surat_template SET definisi=?, updated_at=datetime('now','localtime') WHERE kode=? AND builtin=1HTTP/1.1 400 Bad Request Content-Type: text/plain;
+
+UPDATE users SET username=?, nama=?, role=?, aktif=? WHERE id=?http: NewClientConn returned something that is not a ClientConninternal error: exactly one of res or err should be set;
+
