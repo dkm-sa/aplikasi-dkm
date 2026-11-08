@@ -1,0 +1,7 @@
+{
+  "name": "web-dkm",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "dependencies": { "@vercel/blob": "^1.0.0" }
+}
